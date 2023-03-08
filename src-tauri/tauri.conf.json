@@ -52,13 +52,15 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
         "resizable": true,
         "title": "Tauri Playground",
-        "width": 800
+        "width": 800,
+        "transparent": true
       }
     ]
   }
