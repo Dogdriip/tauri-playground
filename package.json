@@ -1,0 +1,6 @@
+{
+  "packageManager": "yarn@3.4.1",
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.2.3"
+  }
+}
