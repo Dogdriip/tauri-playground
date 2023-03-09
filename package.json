@@ -1,6 +1,17 @@
 {
-  "packageManager": "yarn@3.4.1",
+  "name": "tauri-playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.2.3"
-  }
+    "@tauri-apps/cli": "^1.2.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "packageManager": "yarn@3.4.1"
 }

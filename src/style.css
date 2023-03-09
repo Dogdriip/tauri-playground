@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Regular.woff2?v=3.19") format("woff2"),
+       url("Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Italic.woff2?v=3.19") format("woff2"),
+       url("Inter-Italic.woff?v=3.19") format("woff");
+}
+
+html,
+body {
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+
+  background: transparent;
+  color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
