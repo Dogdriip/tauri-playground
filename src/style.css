@@ -15,12 +15,6 @@
        url("Inter-Italic.woff?v=3.19") format("woff");
 }
 
-html,
-body {
-  background: transparent;
-  font-family: 'Inter', sans-serif;
-}
-
 :root {
   font-family: Inter, sans-serif;
 
