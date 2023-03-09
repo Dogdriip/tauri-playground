@@ -10,9 +10,6 @@
     "version": "0.1.0"
   },
   "tauri": {
-    "allowlist": {
-      "all": true
-    },
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
@@ -46,22 +43,26 @@
         "timestampUrl": ""
       }
     },
-    "security": {
-      "csp": null
-    },
     "updater": {
       "active": false
+    },
+    "allowlist": {
+      "all": true
     },
     "macOSPrivateApi": true,
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "Tauri Playground",
         "width": 800,
-        "transparent": true
+        "height": 600,
+        "fullscreen": false,
+        "resizable": true,
+        "transparent": true,
+        "decorations": false
       }
-    ]
+    ],
+    "security": {
+      "csp": null
+    }
   }
 }
