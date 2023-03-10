@@ -7,6 +7,19 @@ use tauri::Manager;
 use window_vibrancy::{apply_blur, apply_vibrancy, NSVisualEffectMaterial};
 use window_shadows::set_shadow;
 
+#[tauri::command]
+fn arch() -> String {
+  String::from(std::env::consts::ARCH)
+}
+#[tauri::command]
+fn family() -> String {
+  String::from(std::env::consts::FAMILY)
+}
+#[tauri::command]
+fn os() -> String {
+  String::from(std::env::consts::OS)
+}
+
 fn main() {
   tauri::Builder::default()
     .setup(|app| {
@@ -28,6 +41,7 @@ fn main() {
 
       Ok(())
     })
+    .invoke_handler(tauri::generate_handler![arch, family, os])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
